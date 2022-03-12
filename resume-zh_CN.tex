@@ -13,49 +13,78 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{秦亚飞}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
+  \email{qinyafee@163.com} \textperiodcentered\
+  \phone{(+86) 18501689646} \textperiodcentered\
+  \faBirthdayCake{ 1990/07} \textperiodcentered}
+
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{浙江大学} \qquad 能源工程学系 \qquad  能源与环境系统工程 \qquad 本科}{2010/8--2014/6}
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言：C++ > Python
+  \item 工具：ROS、PCL、OpenCV、g2o、Ceres Solver
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\section{\faUsers\ 工作经历}
+\datedsubsection{\textbf{小鹏汽车科技有限公司} \quad 地图开发部 \quad  高精地图算法工程师}{2021/5--今}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
+  高速更新图层开发
+  \begin{itemize}
+    \item {负责车端更新图层功能实现，在OTA4中预埋云端数据下载和局部地图错误修复功能。支持拓展匝道、车道属性更新、分叉/合流等场景。熟悉map\_manager、map\_fusion模块，了解localization、reference\_line。}
+    \item 负责云端质检流程开发，支持地图数据几何/逻辑的潜在问题检查。
+  \end{itemize}
+
+  城市更新图层开发
+  \begin{itemize}
+    \item 负责几何生成算法开发，利用量产车众包上报的感知定位等数据，生成车道线等信息，建立局部地图，修复错误或缺失的地图区域。
+  \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{哈曼（中国）投资有限公司} \quad ADAS BU \quad 计算机视觉算法工程师}{2018/9--2021/5}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
+  参与APA（辅助泊车）项目的开发，负责SFM模块的开发
+  \begin{itemize}
+    \item 基于360环视系统，融合几何特征点、语义特征和轮速计信息，实现VWO视觉里程计
+    \item 熟悉手眼标定原理，掌握里程计、环视系统标定方法
+    \item 熟悉鱼眼内参模型、图像矫正、特征提取和跟踪、多视图几何、预积分、图优化方法
+    \item 熟悉ORB\_SLAM3/VINS-Mono/MSCKF/OpenVins
+  \end{itemize}
+
+  负责Camera/ LiDAR外参标定工具的开发
+  \begin{itemize}
+    \item 在线标定：实现基于边缘匹配的在线标定算法
+    \item 离线标定：掌握基于AR tags的标定工具
+  \end{itemize}
+
+  参与TJA（交通拥堵辅助系统）的预研，负责融合跟踪模块的开发
+  \begin{itemize}
+    \item 基于Carla模拟生成激光雷达和毫米波雷达的目标检测列表，跟踪多目标轨迹
+    \item 熟悉CTRV、CTRA运动模型，EKF、UKF、粒子滤波，数据关联GNN、JPDA
+  \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{上海汽车集团商用车公司技术中心}  \quad  动力总成与电气化中心 \quad  系统工程师 }{2014/8--2018/9}
+负责新能源子系统的需求分析、技术评审、开发/售后问题排查；负责设计方案及工程变更发布、供应商管理
+
+\begin{onehalfspacing}
+  电机/电控系统
+  \begin{itemize}
+    \item 参与分析解决电机及电机控制器的各类问题，如EMC干扰、CAN错误帧、各类偶发性故障等
+    \item 参与分析解决和电机及电机控制器可能相关的整车问题，如各类NVH、动力电池MSD击穿等
+    \item 支持整车其他功能模块的开发，如ESP、防盗、远程监控、驻坡等
+  \end{itemize}
+
+  冷却系统
+  \begin{itemize}
+    \item 解决电子水泵批量售后质量问题，确定失效模式并推动整改
+    \item 解决电子风扇噪声大问题，降低功率重新选型，优化风扇控制策略
+    \item 升级电子水泵，从开关型到PWM变频型，使用VCU实现功率和转速控制功能
+  \end{itemize}
 \end{onehalfspacing}
 
 % Reference Test
@@ -65,24 +94,10 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
+\section{\faCode\ 其他}
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
-
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 优达学院无人驾驶工程师纳米学位（2017/10--2018/8）
+  \item 多目VIO系统动态初始化实现与优化（VR头显）
 \end{itemize}
 
 %% Reference

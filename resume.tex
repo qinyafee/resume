@@ -7,45 +7,76 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Yafei Qin}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{qinyafee@163.com} \textperiodcentered\
+  \phone{(+86) 18501689646} \textperiodcentered\
+  \faBirthdayCake{ 1990/07} \textperiodcentered }
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{Zhejiang University} }{2010/8--2014/6}
+\textit{Bachelor of Engineering}, Major in Energy \& Environment Systems Engineering
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C++ > Python
+  \item Tools: ROS, PCL, OpenCV, g2o, Ceres Solver
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\section{\faUsers\ Work Experience}
+\datedsubsection{\textbf{XiaoPeng Vehicle Technical Co., Ltd.}  \quad Map Department  \quad HD-Map Engineer}{2021/5 -- Present}
+Highway Update layer:
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Implement vehicle update layer application in OTA4, enable downloading data from cloud server and repairing error map section.
+  \item Support scenarios such as extend ramp, lane property replacement, split/merge.
+  \item Familiar with map\_manager, map\_fusion, localization, reference\_line modules.
+  \item Implement compliance checking module for cloud server, support rules of geometry and road logic validation.
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+Urban Update layer:
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item Develop road geometry generation module based on crowd-sourced vehicle data, especially perception \& localization.
+  \item Repair error map section and produce submap by utilizing the generated lane line boundaries.
+\end{itemize}
+
+
+\datedsubsection{\textbf{Harman International (China) Holdings Co., Ltd.} \ ADAS BU  \ Computer Vision Engineer}{2018/9 -- 2021/5}
+
+Participate in APA(Automatic Parking Assistance), develop SFM module
+\begin{itemize}
+  \item Based on surround view system and wheel encoders, implemented visual odometry
+  \item Familiar with hand-eye calibration, wheel odometry calibration, surround view system calibration
+  \item Familiar with fisheye model, feature extraction and tracking, multiple view geometry, IMU preintegration, graph optimization, pose graph, loop detection
+  \item Familiar with ORB\_SLAM3, VINS-Mono, MSCKF, OpenVins
+\end{itemize}
+
+Develop extrinsic calibration tool of Camera/ LiDAR
+\begin{itemize}
+  \item Implement online calibration between pointcloud and pixels without calibration boards
+  \item Familiar with offline calibration tools based on AR tags
+\end{itemize}
+
+Participate in research of TJA(Traffic Jam Assistance System), develop multiple sensor fusion module
+\begin{itemize}
+  \item Implement GNN/UKF fusion frame, based on Carla, tracking multiple targets
+  \item Familiar with motion models, like CV, CA, CTRV, CTRA
+  \item Familiar with EKF, UKF, Particle Filter, multiple target tracking methods, GNN, JPDA
+\end{itemize}
+
+\datedsubsection{\textbf{SAIC Motor Commercial Vehicle Co., Ltd} \ Powertrain Department \ System Engineer}{2014/8 -- 2018/9}
+
+MOTOR\&MCU System
+\begin{itemize}
+  \item Promote to solve issues of MOTOR \& MCU, like EMC, error frame of Powertrain-CAN, occasional errors
+  \item Promote to solve issues related to MOTOR \& MCU, like NVH, MSD fault of High Voltage Battery, isolation
+  \item Analyze and fulfill requirements of other modules, like ESP, Security, TBOX and Slope Parking
+\end{itemize}
+
+Cooling System
+\begin{itemize}
+  \item Solve aftersales issue of E-Pump, NVH issue of E-Fan, determine the failure mode and formulate solutions
+  \item Update E-Pump from ON-OFF to PWM, control the power and speed with VCU
 \end{itemize}
 
 % Reference Test
@@ -55,22 +86,10 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ Skills}
+\section{\faCode\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
-\end{itemize}
-
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item Udacity Self-Driving Car Engineer Nanodegree Program(2017/10 -- 2018/08)
+  \item Implement dynamic initilization for a multi-vio system(VR device)
 \end{itemize}
 
 %% Reference

@@ -16,7 +16,7 @@
 % use fontawesome
 \RequirePackage{fontawesome}
 % use xcolor for customizing color
-%\RequirePackage[usenames,dvipsnames]{xcolor}
+\RequirePackage[usenames,dvipsnames]{xcolor}
 % loading fonts
 \RequirePackage{fontspec}
 % Main document font
@@ -31,12 +31,12 @@
 ]{texgyretermes}
 
 \RequirePackage[
-	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
-	nohead
+  a4paper,
+  left=0.5in, % default = 0.8
+  right=0.5in,% default = 0.8
+  top=0.30in, % default = 0.70
+  bottom=0.25in,% default = 0.55
+  nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
@@ -52,7 +52,7 @@
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
+  [{\color{NavyBlue}\titlerule[0.8pt]}]                 % Inserts a horizontal line after the heading
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
 
 \titleformat{\subsection}
@@ -113,10 +113,10 @@
 
 \newcommand{\basicInfo}[1]{
   \centerline{\sffamily\large{#1}}
-  \vspace{1.5ex}
+  \vspace{1.05ex}  % 默认1.5, 缩小行距
 }
 
 \newcommand{\role}[2]{
   {\par \textit{#1} ~ #2 \par}
-  \vspace{0.85ex}
+  \vspace{0.1ex}  % 默认0.85
 }
