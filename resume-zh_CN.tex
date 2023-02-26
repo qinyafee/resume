@@ -23,33 +23,42 @@
 
 \section{\faBook\ 自我评价}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 4年自动驾驶开发经验，熟悉C++，熟悉slam、标定、地图开发业务；熟悉相机、激光雷达、里程计、IMU。
-\end{itemize}
+5年智驾开发，量产经验丰富；熟悉slam/定位、地图开发、标定；熟悉相机、GNSS/IMU、LiDAR、里程计
 
+\section{\faCogs\ 专业技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 语言：C++ > Python
+  \item 算法：熟悉滤波和优化的定位建图技术：鱼眼内参模型、图像/特征点矫正、多视图几何、预积分；图优化、EKF/UKF、粒子滤波；数据关联JPDA、Hungarian Match、车道线匹配
+  \item 开源框架：ORB\_SLAM3/VINS-Mono/MSCKF/OpenVins
+  \item 工具：ROS、PCL、OpenCV、g2o、Ceres Solver
+\end{itemize}
 
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{浙江大学} \qquad 能源工程学系 \qquad  能源与环境系统工程 \qquad 本科}{2010/8--2014/6}
 
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言：C++ > Python
-  \item 工具：ROS、PCL、OpenCV、g2o、Ceres Solver
-\end{itemize}
-
 \section{\faUsers\ 工作经历}
-\datedsubsection{\textbf{小鹏汽车科技有限公司} \quad 地图开发部 \quad  高精地图算法工程师}{2021/5--今}
+\datedsubsection{\textbf{路特斯科技有限公司} \quad 算法软件部 \quad  定位算法负责人}{2022/7--今}
 \begin{onehalfspacing}
-  高速更新图层开发
+  负责高速高架定位算法开发与交付
   \begin{itemize}
-    \item {负责车端更新图层模块开发，实现云端数据下载和局部地图错误修复功能，支持拓展匝道、车道属性更新、分叉/合流等场景，已在OTA4中发布。熟悉ADASISV3协议。}
-    \item 负责云端质检流程开发，支持地图数据几何/逻辑问题检查。
+    \item {搭建算法框架，综合利用全套传感器，输出全局/相对位姿和局部地图结果，以实现有无hdmap下的产品需求}
+    \item 与上下游制定接口定义、KPI、状态预警
+    \item 制定定位SIL方案，数据切片/清洗，KPI评测，VIZ可视优化
+  \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{小鹏汽车科技有限公司} \quad 地图开发部 \quad  高精地图算法工程师}{2021/5--2022/7}
+\begin{onehalfspacing}
+  高速高架更新图层开发
+  \begin{itemize}
+    \item {负责车端更新图层模块开发，实现云端数据下载和地图错误修复功能，已量产交付；熟悉ADASISV3协议}
+    \item 负责云端质检流程开发，支持地图数据几何/逻辑问题检查
   \end{itemize}
 
   城市更新图层开发
   \begin{itemize}
-    \item 负责几何生成算法开发部分，利用量产车众包上报的感知定位等数据，生成车道线等信息，建立局部地图，修复错误或缺失的地图区域。
+    \item 负责车道线生成算法，利用量产车众包上报的感知定位等数据，构建全局地图，修复地图错误或缺失区域
   \end{itemize}
 \end{onehalfspacing}
 
@@ -59,8 +68,6 @@
   \begin{itemize}
     \item 基于360环视系统，融合几何特征点、语义特征和轮速计信息，实现VWO视觉里程计
     \item 熟悉手眼标定原理，掌握里程计、环视系统标定方法
-    \item 熟悉鱼眼内参模型、图像矫正、特征提取和跟踪、多视图几何、预积分、图优化方法
-    \item 熟悉ORB\_SLAM3/VINS-Mono/MSCKF/OpenVins
   \end{itemize}
 
   负责Camera/ LiDAR外参标定工具的开发
@@ -72,19 +79,16 @@
   参与TJA（交通拥堵辅助系统）的预研，负责融合跟踪模块的开发
   \begin{itemize}
     \item 基于Carla模拟生成激光雷达和毫米波雷达的目标检测列表，跟踪多目标轨迹
-    \item 熟悉CTRV、CTRA运动模型，EKF、UKF、粒子滤波，数据关联GNN、JPDA
   \end{itemize}
 \end{onehalfspacing}
 
 \datedsubsection{\textbf{上海汽车集团商用车公司技术中心}  \quad  动力总成与电气化中心 \quad  系统工程师 }{2014/8--2018/9}
-负责新能源关键系统的需求分析和技术开发；负责设计方案及工程变更发布、供应商管理
+负责新能源关键系统的需求分析和技术开发；负责设计方案及变更发布、供应商管理
 
 \begin{onehalfspacing}
   \begin{itemize}
-    \item 开发电机及电机控制器系统，解决如EMC干扰、CAN错误帧、各类偶发性故障等问题
-    \item 开发电子水泵、电子冷却风扇系统
-    \item 支持整车其他功能的开发，如ESP、防盗、远程监控、驻坡等
-    \item 协同分析整车问题，如各类NVH、动力电池MSD击穿等
+    \item 开发电机及控制器、电子水泵/冷却风扇，配合整车ESP、防盗、远程监控、驻坡等功能的开发
+    \item 推动解决各类NVH、EMC干扰、动力电池MSD击穿等复杂问题
   \end{itemize}
 \end{onehalfspacing}
 
