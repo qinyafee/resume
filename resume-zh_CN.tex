@@ -23,7 +23,7 @@
 
 \section{\faBook\ 自我评价}
 % increase linespacing [parsep=0.5ex]
-5年智驾开发，量产经验丰富；熟悉slam/定位、地图开发、标定；熟悉相机、GNSS/IMU、LiDAR、里程计
+6年智驾开发/管理，量产经验丰富；熟悉slam、地图定位、标定；了解感知开发、自动标注业务
 
 \section{\faCogs\ 专业技能}
 % increase linespacing [parsep=0.5ex]
@@ -32,19 +32,31 @@
   \item 算法：熟悉滤波和优化的定位建图技术：鱼眼内参模型、图像/特征点矫正、多视图几何、预积分；图优化、EKF/UKF、粒子滤波；数据关联JPDA、Hungarian Match、车道线匹配
   \item 开源框架：ORB\_SLAM3/VINS-Mono/MSCKF/OpenVins
   \item 工具：ROS、PCL、OpenCV、g2o、Ceres Solver
+  \item 优达学院无人驾驶工程师纳米学位（2017/10--2018/8）
 \end{itemize}
 
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{浙江大学} \qquad 能源工程学系 \qquad  能源与环境系统工程 \qquad 本科}{2010/8--2014/6}
 
 \section{\faUsers\ 工作经历}
-\datedsubsection{\textbf{路特斯科技有限公司} \quad 算法软件部 \quad  定位算法负责人}{2022/7--今}
+\datedsubsection{\textbf{路特斯科技有限公司} \quad 算法软件部 \quad  定位建图算法负责人}{2022/7--今}
 \begin{onehalfspacing}
-  负责高速高架定位算法开发与交付
+  负责VE21高速高架NP/CP定位算法开发
   \begin{itemize}
-    \item {搭建算法框架，综合利用全套传感器，输出全局/相对位姿和局部地图结果，以实现有无hdmap下的产品需求}
+    \item {搭建算法框架，带领团队开发全局/相对定位和3d车道线，以实现有/无hdmap下的NP/CP需求}
     \item 与上下游制定接口定义、KPI、状态预警
-    \item 制定定位SIL方案，数据切片/清洗，KPI评测，VIZ可视优化
+    \item 制定定位SIL方案，真值生产、数据切片/清洗、KPI评测、VIZ可视优化
+  \end{itemize}
+  负责lambda泊车感知建图的开发
+  \begin{itemize}
+    \item {基于行车框架，搭建泊车数据流；主导IPM拼接、停车位/freespace检测、建图等开发任务}
+    \item 制定上下游TOPIC定义、数采录制、VIZ显示方案
+    \item 支持4D标注，提供离线标定校验和点云建图算子
+  \end{itemize}
+  负责对lambda高速高架NP/CP定位算法的供应商管理
+  \begin{itemize}
+    \item {分析jira，与感知/规控/地图/传感器/系统等沟通，界定定位模块问题，并推动供应商制定优化方向，跟踪执行}
+    \item 验收供应商定位KPI报告，把控关键指标
   \end{itemize}
 \end{onehalfspacing}
 
@@ -101,7 +113,6 @@
 
 \section{\faCode\ 其他}
 \begin{itemize}[parsep=0.5ex]
-  \item 优达学院无人驾驶工程师纳米学位（2017/10--2018/8）
   \item 多目VIO系统实现与动态初始化深度优化（VR头显设备）
 \end{itemize}
 
