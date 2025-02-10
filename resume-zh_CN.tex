@@ -23,15 +23,15 @@
 
 \section{\faBook\ 自我评价}
 % increase linespacing [parsep=0.5ex]
-6年智驾开发/管理，量产经验丰富；熟悉slam、地图定位、标定；了解感知开发、自动标注业务
+8年智驾开发/管理，量产经验丰富，自驱力强；熟悉感知、数据合成、自动标注、地图定位开发业务
 
 \section{\faCogs\ 专业技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 语言：C++ > Python
-  \item 算法：熟悉滤波和优化的定位建图技术：鱼眼内参模型、图像/特征点矫正、多视图几何、预积分；图优化、EKF/UKF、粒子滤波；数据关联JPDA、Hungarian Match、车道线匹配
-  \item 开源框架：ORB\_SLAM3/VINS-Mono/MSCKF/OpenVins
-  \item 工具：ROS、PCL、OpenCV、g2o、Ceres Solver
+  \item 语言：C++、Python、PyTorch
+  \item 重建：熟悉3dgs、streetGaussian、driveStudio；driveDreamer；dreamfusion、dreamGaussian、Hunyuan
+  \item 生成：熟悉VAE、Diffusion、DiT、DDPM、Flow matching基础理论，熟悉经典工作如ControlNet、LoRA、dreambooth、MagicDrive、openSora等
+  \item 传统CV/slam：鱼眼内参模型、图像/特征点矫正、多视图几何、预积分；图优化、EKF/UKF、粒子滤波；数据关联JPDA、HM匹配、车道线匹配；开源框架：ORB\_SLAM/VINS-Mono/MSCKF/OpenVins；工具：ROS、PCL、OpenCV、g2o、Ceres Solver
   \item 优达学院无人驾驶工程师纳米学位（2017/10--2018/8）
 \end{itemize}
 
@@ -39,24 +39,36 @@
 \datedsubsection{\textbf{浙江大学} \qquad 能源工程学系 \qquad  能源与环境系统工程 \qquad 本科}{2010/8--2014/6}
 
 \section{\faUsers\ 工作经历}
-\datedsubsection{\textbf{路特斯科技有限公司} \quad 算法软件部 \quad  定位建图算法负责人}{2022/7--今}
+\datedsubsection{\textbf{路特斯科技有限公司} \quad 算法软件部 \quad  环境模型算法专家}{2022/7--今}
 \begin{onehalfspacing}
-  负责VE21高速高架NP/CP定位算法开发
+
+  负责数据合成业务
   \begin{itemize}
-    \item {搭建算法框架，带领团队开发全局/相对定位和3d车道线，以实现有/无hdmap下的NP/CP需求}
-    \item 与上下游制定接口定义、KPI、状态预警
-    \item 制定定位SIL方案，真值生产、数据切片/清洗、KPI评测、VIZ可视优化
+    \item 主导感知训练数据合成、端到端闭环仿真业务
+    \item 带领团队开发预处理、3dgs场景重建、3d资产生成、资产插入、场景可控生成模型、闭环仿真框架
+    \item 可重建行人等柔性物体；可生成360°资产，如海外TSI、锥桶、水马、异型车辆、异型障碍物等
+    \item 目前已经上线，支持修改传感器内外参、动/静态障碍物编辑、在2d视频流/3d场景中插入物体、红绿灯控制，支持NVS渲染及全链路闭环仿真
+    \item 交付纯视觉点云，支持无lidar数据标注
+    \item 场景可控生成：可生成多视角图片/短视频，支持天气、光照、障碍物等控制
   \end{itemize}
-  负责lambda泊车感知建图的开发
+
+  负责泊车感知建图的开发
   \begin{itemize}
-    \item {基于行车框架，搭建泊车数据流；主导IPM拼接、停车位/freespace检测、建图等开发任务}
-    \item 制定上下游TOPIC定义、数采录制、VIZ显示方案
-    \item 支持4D标注，提供离线标定校验和点云建图算子
+    \item 主导IPM拼接、停车位/freespace/OD检测、后处理、记忆建图等开发任务
+    \item 制定感知数据闭环方案，包括研发数采计划、标注、回测等环节
+    \item 支持4D标注，提供点云建图算子；动态障碍物已经实现自动标注，极大节省标注费用
+    \item 目前APA功能研发准出测试中
   \end{itemize}
-  负责对lambda高速高架NP/CP定位算法的供应商管理
+  负责全栈自研定位算法开发
+  \begin{itemize}
+    \item {搭建算法框架，带领团队开发定位模块：支持高速/城市NOA全局定位、行车/泊车局部定位；适配不同配置：Hdmap/SDmap、高精/低精imu、有/无电机转速}
+    \item 制定定位SIL方案，真值生产、数据切片/清洗、KPI评测、VIZ可视优化，与上下游定义接口、KPI、状态预警
+    \item 已在lotus全系国内/欧洲、领克Z10车型OTA量产
+  \end{itemize}
+  负责lambda高快NOA定位供应商管理
   \begin{itemize}
     \item {分析jira，与感知/规控/地图/传感器/系统等沟通，界定定位模块问题，并推动供应商制定优化方向，跟踪执行}
-    \item 验收供应商定位KPI报告，把控关键指标
+    \item 验收供应商定位KPI报告，review量产问题整改方案
   \end{itemize}
 \end{onehalfspacing}
 
@@ -76,7 +88,7 @@
 
 \datedsubsection{\textbf{哈曼（中国）投资有限公司} \quad ADAS BU \quad 计算机视觉算法工程师}{2018/9--2021/5}
 \begin{onehalfspacing}
-  参与APA（辅助泊车）项目的开发，负责建图定位模块的开发
+  参与APA开发，负责建图定位模块的开发
   \begin{itemize}
     \item 基于360环视系统，融合几何特征点、语义特征和轮速计信息，实现VWO视觉里程计
     \item 熟悉手眼标定原理，掌握里程计、环视系统标定方法
@@ -95,12 +107,13 @@
 \end{onehalfspacing}
 
 \datedsubsection{\textbf{上海汽车集团商用车公司技术中心}  \quad  动力总成与电气化中心 \quad  系统工程师 }{2014/8--2018/9}
-负责新能源关键系统的需求分析和技术开发；负责设计方案及变更发布、供应商管理
+负责新能源关键系统的需求分析和技术开发；负责设计方案及变更发布、供应商管理；跨部门合作智驾技术预研
 
 \begin{onehalfspacing}
   \begin{itemize}
     \item 开发电机及控制器、电子水泵/冷却风扇，配合整车ESP、防盗、远程监控、驻坡等功能的开发
     \item 推动解决各类NVH、EMC干扰、动力电池MSD击穿等复杂问题
+    \item 园区接驳车智驾demo演示
   \end{itemize}
 \end{onehalfspacing}
 
@@ -113,7 +126,9 @@
 
 \section{\faCode\ 其他}
 \begin{itemize}[parsep=0.5ex]
-  \item 多目VIO系统实现与动态初始化深度优化（VR头显设备）
+  \item 多目VIO系统实现与动态初始化深度优化（VR头显设备）{2021/2--2022/5}
+  \item CN117310756B 多传感器融合定位方法及系统、机器可读存储介质 2023.12.29
+  \item CN117249839A 一种车道线地图生成方法、装置、设备和存储介质 2023.12.19
 \end{itemize}
 
 %% Reference
