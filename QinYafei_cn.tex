@@ -18,7 +18,8 @@
 \basicInfo{
   \email{qinyafee@163.com} \textperiodcentered\
   \phone{(+86) 18501689646} \textperiodcentered\
-  \faBirthdayCake{ 1990/07} \textperiodcentered}
+  \faBirthdayCake{ 1990/07} \textperiodcentered\
+  \faMapMarker{ 上海} \textperiodcentered}
 
 
 \section{\faBook\ 自我评价}
@@ -45,21 +46,20 @@
   负责数据合成业务
   \begin{itemize}
     \item 主导感知训练数据合成、端到端闭环仿真业务
-    \item 带领团队开发预处理、3dgs场景重建、3d资产生成、资产插入、场景可控生成模型、闭环仿真框架
+    \item 带领团队开发预处理、3dgs场景重建、3d资产生成、在2d视频流/3d场景中插入资产、场景可控生成模型、闭环仿真框架
     \item 可重建行人等柔性物体；可生成360°资产，如海外TSI、锥桶、水马、异型车辆、异型障碍物等
-    \item 目前已经上线，支持修改传感器内外参、动/静态障碍物编辑、在2d视频流/3d场景中插入物体、红绿灯控制，支持NVS渲染及全链路闭环仿真
-    \item 交付纯视觉点云，支持无lidar数据标注
+    \item 目前已经上线，支持修改传感器内外参、动/静态障碍物编辑、红绿灯控制，支持NVS渲染及全链路闭环仿真
+    \item 交付纯视觉点云，支持无lidar静态元素标注
     \item 场景可控生成：可生成多视角图片/短视频，支持天气、光照、障碍物等控制
   \end{itemize}
 
   负责泊车感知建图的开发
   \begin{itemize}
-    \item 主导IPM拼接、停车位/freespace/OD检测、后处理、记忆建图等开发任务
+    \item 主导IPM拼接、停车位/freespace/OD检测、后处理、记忆行/泊车建图、车位到车位等开发任务
     \item 制定感知数据闭环方案，包括研发数采计划、标注、回测等环节
     \item 支持4D标注，提供点云建图算子；动态障碍物已经实现自动标注，极大节省标注费用
-    \item 目前APA功能研发准出测试中
   \end{itemize}
-  负责全栈自研定位算法开发
+  负责全场景定位算法开发
   \begin{itemize}
     \item {搭建算法框架，带领团队开发定位模块：支持高速/城市NOA全局定位、行车/泊车局部定位；适配不同配置：Hdmap/SDmap、高精/低精imu、有/无电机转速}
     \item 制定定位SIL方案，真值生产、数据切片/清洗、KPI评测、VIZ可视优化，与上下游定义接口、KPI、状态预警

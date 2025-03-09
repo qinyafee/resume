@@ -1,6 +1,6 @@
 #!/bin/sh
-xelatex resume.tex
+xelatex QinYafei_en.tex
 
-xelatex resume-zh_CN.tex
+xelatex QinYafei_cn.tex
 
 pdftk resume-zh_CN.pdf resume.pdf cat output QinYafei.pdf
