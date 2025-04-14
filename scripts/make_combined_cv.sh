@@ -3,4 +3,4 @@ xelatex QinYafei_en.tex
 
 xelatex QinYafei_cn.tex
 
-pdftk resume-zh_CN.pdf resume.pdf cat output QinYafei.pdf
+pdftk QinYafei_cn.pdf QinYafei_en.pdf cat output QinYafei.pdf

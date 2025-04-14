@@ -24,7 +24,7 @@
 
 \section{\faBook\ 自我评价}
 % increase linespacing [parsep=0.5ex]
-8年智驾开发/管理，量产经验丰富，自驱力强；熟悉感知、数据合成、自动标注、地图定位开发业务
+8年智驾开发/管理，量产经验丰富，自驱力强；熟悉BEV感知、数据合成、闭环仿真、自动标注、地图定位开发业务
 
 \section{\faCogs\ 专业技能}
 % increase linespacing [parsep=0.5ex]
@@ -32,7 +32,8 @@
   \item 语言：C++、Python、PyTorch
   \item 重建：熟悉3dgs、streetGaussian、driveStudio；driveDreamer；dreamfusion、dreamGaussian、Hunyuan
   \item 生成：熟悉VAE、Diffusion、DiT、DDPM、Flow matching基础理论，熟悉经典工作如ControlNet、LoRA、dreambooth、MagicDrive、openSora等
-  \item 传统CV/slam：鱼眼内参模型、图像/特征点矫正、多视图几何、预积分；图优化、EKF/UKF、粒子滤波；数据关联JPDA、HM匹配、车道线匹配；开源框架：ORB\_SLAM/VINS-Mono/MSCKF/OpenVins；工具：ROS、PCL、OpenCV、g2o、Ceres Solver
+  \item 感知：针孔/鱼眼内参模型、图像/特征点矫正、BEV转换、各任务经典模型/数据集/评测方法
+  \item slam：图优化、EKF/UKF、粒子滤波、预积分；JPDA关联、HM匹配、车道线匹配；开源框架：ORB\_SLAM/VINS、MSCKF、g2o、Ceres Solver
   \item 优达学院无人驾驶工程师纳米学位（2017/10--2018/8）
 \end{itemize}
 
@@ -45,7 +46,7 @@
 
   负责数据合成业务
   \begin{itemize}
-    \item 主导感知训练数据合成、端到端闭环仿真业务
+    \item 主导感知训练数据合成、端到端demo、闭环仿真业务
     \item 带领团队开发预处理、3dgs场景重建、3d资产生成、在2d视频流/3d场景中插入资产、场景可控生成模型、闭环仿真框架
     \item 可重建行人等柔性物体；可生成360°资产，如海外TSI、锥桶、水马、异型车辆、异型障碍物等
     \item 目前已经上线，支持修改传感器内外参、动/静态障碍物编辑、红绿灯控制，支持NVS渲染及全链路闭环仿真
@@ -55,7 +56,7 @@
 
   负责泊车感知建图的开发
   \begin{itemize}
-    \item 主导IPM拼接、停车位/freespace/OD检测、后处理、记忆行/泊车建图、车位到车位等开发任务
+    \item 主导IPM拼接、停车位/BEV freespace/OD检测、后处理、记忆行/泊车建图、车位到车位等开发任务
     \item 制定感知数据闭环方案，包括研发数采计划、标注、回测等环节
     \item 支持4D标注，提供点云建图算子；动态障碍物已经实现自动标注，极大节省标注费用
   \end{itemize}
